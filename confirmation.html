@@ -92,11 +92,11 @@
       <p>Merci de vous être inscrit sur BlizzEd. Pour finaliser votre inscription et accéder à toutes les fonctionnalités de notre plateforme, veuillez confirmer votre adresse email en cliquant sur le bouton ci-dessous :</p>
       
       <div style="text-align: center;">
-        <a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email" class="button">Confirmer mon email</a>
+        <a href="{{ .ConfirmationURL }}" class="button">Confirmer mon email</a>
       </div>
       
       <p>Si le bouton ne fonctionne pas, vous pouvez également copier et coller ce lien dans votre navigateur :</p>
-      <p style="word-break: break-all;"><a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email">{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email</a></p>
+      <p style="word-break: break-all;"><a href="{{ .ConfirmationURL }}">{{ .ConfirmationURL }}</a></p>
       
       <p>Ou utiliser ce code de confirmation :</p>
       <div class="token">{{ .Token }}</div>
