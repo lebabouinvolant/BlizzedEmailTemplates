@@ -89,11 +89,11 @@
       <p>Voici votre lien magique pour vous connecter à BlizzEd. Cliquez simplement sur le bouton ci-dessous pour vous connecter instantanément sans mot de passe :</p>
       
       <div style="text-align: center;">
-        <a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email" class="button">Me connecter</a>
+        <a href="supabase.blizzed.fr/auth/v1/confirm?token_hash={{ .TokenHash }}&type=email" class="button">Me connecter</a>
       </div>
       
       <p>Si le bouton ne fonctionne pas, vous pouvez également copier et coller ce lien dans votre navigateur :</p>
-      <p style="word-break: break-all;"><a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email">{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email</a></p>
+      <p style="word-break: break-all;"><a href="supabase.blizzed.fr/auth/v1/confirm?token_hash={{ .TokenHash }}&type=email">{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email</a></p>
       
       <div class="note">
         <p><strong>Note :</strong> Ce lien est valable pour une seule utilisation et expire dans 24 heures.</p>
